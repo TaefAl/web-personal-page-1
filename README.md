@@ -1,2 +1,118 @@
 # web-personal-page-1
 create a personal page in html,css 
+I created a special page for the two required languages ​​in a simple way and divided it into a home section, an About section that contains some of the experiences I know, and a Contact section that contains my email
+
+the code of the website 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Taef Almalki - Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #000;
+      color: white;
+    }
+    header {
+      background-color: #111;
+      padding: 20px 0;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 100;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 10px;
+    }
+    nav a:hover {
+      border-bottom: 2px solid #00ffff;
+    }
+    .hero {
+      text-align: center;
+      padding-top: 150px;
+      padding-bottom: 100px;
+      background-color: #111;
+    }
+    .hero h1 {
+      font-size: 36px;
+      margin: 20px 0 10px;
+    }
+    .hero p {
+      font-size: 18px;
+      color: #ccc;
+    }
+    section {
+      padding: 60px 20px;
+      background-color: #111;
+      margin: 0;
+    }
+    h2 {
+      text-align: center;
+      color: #00ffff;
+    }
+    .content {
+      max-width: 800px;
+      margin: auto;
+      line-height: 1.6;
+    }
+    .contact-info {
+      text-align: center;
+      font-size: 18px;
+      margin-top: 20px;
+    }
+    .contact-info a {
+      color: #00ffff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h1>Hi, I'm Taef Almalki</h1>
+    <p>I study Computer Engineering</p>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="content">
+      <ul>
+        <li>Knowledge of C++ programming language</li>
+        <li>Knowledge of SQL language</li>
+        <li>Experience with various electrical circuits</li>
+        <li>I am currently studying Computer Engineering and passionate about designing intelligent systems that integrate hardware and software.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact-info">
+      <p>You can reach me via email:</p>
+      <p><a href="mailto:taefalamlki177@gmail.com">taefalamlki177@gmail.com</a></p>
+    </div>
+  </section>
+
+</body>
+</html>
+
